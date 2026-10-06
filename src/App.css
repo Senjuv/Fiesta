@@ -1,0 +1,186 @@
+/* App.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+  min-height: 100vh;
+  background-color: #fce8c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.background-decorations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.balloon {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.8;
+}
+
+.balloon-left-1 { top: 15%; left: 8%; transform: rotate(-15deg); }
+.balloon-left-2 { top: 55%; left: 12%; transform: rotate(-5deg); }
+.balloon-right-1 { top: 12%; right: 10%; transform: rotate(15deg); }
+.balloon-right-2 { top: 60%; right: 8%; transform: rotate(10deg); }
+
+.confetti {
+  position: absolute;
+  font-size: 1.8rem;
+}
+
+.star-1 { top: 10%; left: 28%; }
+.star-2 { top: 82%; right: 22%; }
+.ribbon-1 { top: 78%; left: 18%; }
+.ribbon-2 { top: 25%; right: 28%; }
+
+.card-container {
+  background-color: #ffffff;
+  border: 4px solid #1a365d;
+  border-radius: 20px;
+  padding: 35px 25px;
+  max-width: 440px;
+  width: 100%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 10;
+  text-align: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-header {
+  color: #0d1b2a;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.surprise-header {
+  color: #c53030;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.birthday-banner {
+  margin: 15px 0;
+}
+
+.birthday-banner h3 {
+  color: #2b6cb0;
+  font-size: 1.4rem;
+}
+
+.surprise-box {
+  background-color: #fff5f5;
+  border: 2px dashed #feb2b2;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.surprise-text {
+  color: #e53e3e;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.info-section {
+  background-color: #f7fafc;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  margin: 15px 0;
+  color: #2d3748;
+  text-align: left;
+}
+
+.info-section p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.details-section {
+  text-align: left;
+  width: 100%;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.details-section p {
+  margin: 10px 0;
+}
+
+.sub-text {
+  color: #4a5568;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.rsvp-box {
+  background-color: #edf2f7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.btn-next, .btn-confirm {
+  background-color: #1a365d;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: transform 0.1s ease, background-color 0.2s;
+}
+
+.btn-next:hover {
+  background-color: #2b4c7e;
+}
+
+.btn-confirm {
+  background-color: #38a169;
+  margin-top: 10px;
+}
+
+.btn-confirm:hover {
+  background-color: #2f855a;
+}
+
+.btn-back {
+  background-color: transparent;
+  color: #4a5568;
+  border: 1px solid #cbd5e0;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-back:hover {
+  background-color: #e2e8f0;
+}
